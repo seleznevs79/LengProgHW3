@@ -5,8 +5,18 @@
 // 12821 -> да
 // 23432 -> да
 
-// Console.Write("Введите пятизначное число");
-// int number = int.Parse(Console.ReadLine()!);
+Console.Write(" Введите  число ");
+int number = int.Parse(Console.ReadLine()!);
+string NumStr = number.ToString();
+
+ if(NumStr.Length == 5){
+    if(NumStr[0] == NumStr[4] && NumStr[1] == NumStr[3]){
+           Console.WriteLine($"Число {number} является полиндромом"); 
+    }
+    else Console.WriteLine($"Число {number} не является полиндромом");
+}
+else
+ Console.WriteLine($"Число {number} не пятизначное");
 
 
 
@@ -44,3 +54,14 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+// Console.WriteLine("Введите число ");
+// int num = int.Parse(Console.ReadLine()!);
+
+// int index = 1;
+
+// while (index <= num)
+// {
+// Console.WriteLine(Math.Pow(index, 3));
+
+// index++;
+// }
